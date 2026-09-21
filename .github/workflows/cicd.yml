@@ -87,4 +87,7 @@ jobs:
         run: kubectl get nodes
 
       - name: Deploy to AWS EKS
-        run: kubectl apply -f ./k8s
+        run: |
+          kubectl apply -f ./k8s
+          kubectl rollout restart deployment/app-deployment
+          kubectl rollout status deployment/app-deployment
