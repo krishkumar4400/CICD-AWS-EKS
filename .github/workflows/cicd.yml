@@ -1,0 +1,34 @@
+name: spring app cicd
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build-test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              run: echo ""
+
+            - name: Setup JDK
+              run: echo ""
+
+            - name: test
+              run: echo ""
+
+    docker-build-push:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout-code
+              run: echo ""
+
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout Code
+              run: echo ""

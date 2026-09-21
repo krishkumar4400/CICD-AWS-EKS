@@ -1,12 +1,12 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name:  Service Name
+  name:  app-service
 spec:
   selector:
-    app:  Selector Label
-  type:  LoadBalancer | ClusterIP | NodePort
+    app:  spring-app
+  type:  LoadBalancer
   ports:
-  - name:  name-of-the-port
+  - name:  http
     port:  80
     targetPort:  8080
