@@ -11,7 +11,7 @@ import com.hello.dto.Data;
 public class Hello {
     @GetMapping("/hello")
     public String hello() {
-        return "Hello World";
+        return "Hello World from Java App";
     }
 
     @GetMapping("/data")
